@@ -8,7 +8,7 @@
   tasks:
   - name: global vars
     ansible.builtin.debug:
-      msg: "I'm learning {{ COURSE }}, Duration is {{ DURATION }} and trainer is {{ TRAINER }}"
+      msg: "I'm learning {{ COURSE }}, Duration is {{ DURATION }} Hrs and trainer is {{ TRAINER }}"
 
   - name: local vars
     vars: 
@@ -16,4 +16,4 @@
       DURATION: 10
       TRAINER: "sivakumar"
     ansible.builtin.debug:
-      msg: "I'm learning {{ COURSE }}, Duration is {{ DURATION }} and trainer is {{ TRAINER }}"
+      msg: "I'm learning {{ COURSE }}, Duration is {{ DURATION }} Hrs and trainer is {{ TRAINER }}"

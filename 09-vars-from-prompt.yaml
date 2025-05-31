@@ -1,0 +1,16 @@
+- name: using vars from prompt 
+  hosts: local
+  connection: local
+  vars_prompt:
+    - name: COURSE
+      prompt: enter your course name
+      private: no
+
+    - name: TRAINER
+      prompt: enter your trainer name
+      private: no
+
+  tasks:
+  - name: picking vars from prompt
+    ansible.builtin.debug:
+      msg: "I'm learning {{ COURSE }}, trainer is {{ TRAINER }}"

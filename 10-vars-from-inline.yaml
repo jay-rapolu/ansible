@@ -1,0 +1,7 @@
+- name: picking vars from command line
+  hosts: local
+  connection: local
+  tasks:
+  - name: picking vars from args
+    ansible.builtin.debug:
+      msg: "I'm learning {{ COURSE }}, trainer is {{ TRAINER }}"

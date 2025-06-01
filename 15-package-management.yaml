@@ -1,0 +1,14 @@
+- name: package management
+  hosts: node
+  tasks:
+  - name: Install Nginx
+    ansible.builtin.dnf:
+      name: nginx
+      state: present
+    when: ansible_os_family == "RedHat"
+
+  - name: Start Nginx
+    ansible.builtin.service:
+      name: nginx
+      state: started
+      enabled: yes

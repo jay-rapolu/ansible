@@ -5,3 +5,9 @@
   - name: using default variable if variable is not given
     ansible.builtin.debug:
       msg: "Hello {{ USER | default('Siva') }}"
+
+  - name: converting string into list using split function
+    vars:
+      TOOLS: "Linux, Shell, Ansible"
+    ansible.builtin.debug:
+      msg: "Tools list is {{ TOOLS | split(',') }}"

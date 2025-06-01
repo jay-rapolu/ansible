@@ -31,4 +31,12 @@
     ansible.builtin.debug:
       msg: "Tools list is {{ TOOLS | dict2items }}"
 
+  - name: converting to upper alpha
+    ansible.builtin.debug:
+      msg: "{{ Jayachandra | upper }}"
+
+  - name: converting to lower alpha
+    ansible.builtin.debug:
+      msg: "{{ Jayachandra | lower }}"      
+
   

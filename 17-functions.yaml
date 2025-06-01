@@ -17,7 +17,7 @@
       TOOLS: 
       - Linux
       - Shell
-      - Ansible"
+      - Ansible
     ansible.builtin.debug:
       msg: "Tools list is {{ TOOLS | items2dict }}"
 

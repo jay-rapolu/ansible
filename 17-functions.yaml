@@ -15,9 +15,8 @@
   - name: converting list items to dictionary
     vars:
       TOOLS: 
-      - Linux
-      - Shell
-      - Ansible
+      - { OS: Linux }
+      - { Scripting: Shell, Ansible }
     ansible.builtin.debug:
       msg: "Tools list is {{ TOOLS | items2dict }}"
 

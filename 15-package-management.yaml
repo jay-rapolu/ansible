@@ -1,5 +1,6 @@
 - name: package management
   hosts: node
+  become: yes
   tasks:
   - name: Install Nginx
     ansible.builtin.dnf:

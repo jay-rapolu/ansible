@@ -11,3 +11,11 @@
       TOOLS: "Linux, Shell, Ansible"
     ansible.builtin.debug:
       msg: "Tools list is {{ TOOLS | split(',') }}"
+
+  - name: converting string into list using split function
+    vars:
+      TOOLS: "Linux, Shell, Ansible"
+    ansible.builtin.debug:
+      msg: "Tools list is {{ TOOLS | items2dict }}"
+
+  

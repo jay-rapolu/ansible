@@ -20,4 +20,13 @@
     ansible.builtin.debug:
       msg: "Tools list is {{ TOOLS | items2dict }}"
 
+  - name: converting dictionary items to list
+    vars:
+      TOOLS: 
+        OS: Linux
+        SCRIPTING: "Ansible, Shell"
+        CI: Jenkins
+    ansible.builtin.debug:
+      msg: "Tools list is {{ TOOLS | dict2items }}"
+
   

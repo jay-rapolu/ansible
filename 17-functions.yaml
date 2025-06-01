@@ -39,4 +39,8 @@
     ansible.builtin.debug:
       msg: "{{ 'Jayachandra' | lower }}"      
 
-  
+  - name: listing the current directory files using command module
+    ansible.builtin.command: ls -ltr
+
+  - name: redirecting list output to files
+    ansible.builtin.shell: ls -ltr > /tmp/output.txt

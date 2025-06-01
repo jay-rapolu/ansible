@@ -33,10 +33,10 @@
 
   - name: converting to upper alpha
     ansible.builtin.debug:
-      msg: "{{ Jayachandra | upper }}"
+      msg: "{{ 'Jayachandra' | upper }}"
 
   - name: converting to lower alpha
     ansible.builtin.debug:
-      msg: "{{ Jayachandra | lower }}"      
+      msg: "{{ 'Jayachandra' | lower }}"      
 
   

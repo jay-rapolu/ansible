@@ -16,7 +16,7 @@
     vars:
       TOOLS: 
       - { OS: Linux }
-      - { Scripting: "Shell, Ansible" }
+      - { Scripting: "Shell" }
     ansible.builtin.debug:
       msg: "Tools list is {{ TOOLS | items2dict }}"
 

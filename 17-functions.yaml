@@ -1,0 +1,7 @@
+- name: Functions in Ansible
+  hosts: local
+  connection: local
+  tasks:
+  - name: using default variable if variable is not given
+    ansible.builtin.debug:
+      msg: "Hello {{ USER | default('Siva') }}"
